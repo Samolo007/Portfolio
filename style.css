@@ -1,4 +1,5 @@
- <style>
+
+
 
  /* ===== RÉINITIALISATION (Reset) ===== */
  * {
@@ -58,10 +59,11 @@
      text-decoration: none;
      font-weight: 500;
      font-size: 1rem;
-     transition: opacity 0.3s;
+
  }
 
  .nav-links a:hover {
+    animation: salolo 3s infinite alternate;
      /* TODO MARDI CSS : Ajouter opacity: 0.6; */
  }
 
@@ -83,6 +85,9 @@
      margin-bottom: 24px;
      letter-spacing: -1px;
      line-height: 1.1;
+ }
+ .hero h1:hover {
+    animation: david 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; ;
  }
 
  .hero p {
@@ -106,11 +111,14 @@
      font-weight: 500;
      transition: all 0.3s;
      font-size: 1.05rem;
- }
-
- .cta-button:hover {
+  
+}
+.cta-button:hover {
+    animation: samolo 3s infinite alternate;
      /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
  }
+
+
 
  /* ===== ABOUT SECTION ===== */
  .about {
@@ -166,7 +174,7 @@
 
  /* ===== SKILLS SECTION ===== */
  .skills {
-     background-color: #f5f5f7;
+     background-color: #46464e;
      padding: 120px 0;
  }
 
@@ -214,7 +222,7 @@
 
  /* ===== PROJECTS SECTION ===== */
  .projects {
-     background-color: #ffffff;
+     background-color: #f7bebe;
      padding: 120px 0;
  }
 
@@ -286,7 +294,7 @@
  }
 
  .project-link:hover {
-     /* TODO MARDI CSS : Ajouter color: #0a84ff; */
+     /* TODO MARDI CSS : Ajouter color: #0a84ff; */ 
  }
 
  /* ===== CONTACT SECTION / FORM ===== */
@@ -358,6 +366,7 @@
  }
 
  .submit-button:hover {
+    animation: lalou 3s infinite alternate;
      /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
  }
 
@@ -551,4 +560,52 @@
      }
  }
 
- </style>
+@keyframes salolo {
+  from{
+   font-size: 1rem;
+  }
+  to {
+    font-size: 5rem;
+  }
+}
+@keyframes samolo {
+  from{
+   filter: blur(0px);
+  }
+  to {
+    filter: blur(5px);
+  }
+}
+@keyframes lalou {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+@keyframes david {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
