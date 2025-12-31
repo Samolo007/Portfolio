@@ -107,6 +107,7 @@ nav {
 
 .nav-links a:hover {
     animation: salolo 3s infinite alternate;
+
     /* TODO MARDI CSS : Ajouter opacity: 0.6; */
 }
 
@@ -161,13 +162,10 @@ nav {
 
 .cta-button:hover {
     animation: samolo 3s infinite alternate;
-    background-color:#bc8ca4;
-    animation: rotate 2s linear infinite;
-    
+    background-color: #bc8ca4;
+    animation: rotate-center 2s;
     /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
 }
-
-
 
 /* ===== ABOUT SECTION ===== */
 .about {
@@ -678,3 +676,21 @@ footer {
         opacity: 1;
     }
 }
+
+@keyframes rotate {
+  0% {
+            transform: rotate(0);
+  }
+  100% {
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+            transform: rotate(0);
+  }
+  100% {
+            transform: rotate(360deg);
+  }
+}
+
