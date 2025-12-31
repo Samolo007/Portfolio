@@ -24,6 +24,9 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
+h1:hover {
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
 
 h2 {
     font-family: "Audiowide", sans-serif;
@@ -677,14 +680,6 @@ footer {
     }
 }
 
-@keyframes rotate {
-  0% {
-            transform: rotate(0);
-  }
-  100% {
-            transform: rotate(360deg);
-  }
-}
 @keyframes rotate-center {
   0% {
             transform: rotate(0);
@@ -692,5 +687,19 @@ footer {
   100% {
             transform: rotate(360deg);
   }
+}
+.typing-effect {
+    overflow: hidden;
+    border-right: .15em solid #751c4f;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
