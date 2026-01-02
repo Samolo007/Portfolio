@@ -248,6 +248,7 @@ nav {
 }
 
 .skill-card:hover {
+    transform: translateY(-15px);
     /* TODO MARDI CSS : Ajouter transform: translateY(-8px); */
 }
 
@@ -352,6 +353,8 @@ nav {
 }
 
 .project-link:hover {
+    animation: rotate-center 2s;
+    color: #b0b9c2;
     /* TODO MARDI CSS : Ajouter color: #0a84ff; */
 }
 
@@ -424,8 +427,9 @@ nav {
 }
 
 .submit-button:hover {
-    animation: lalou 3s infinite alternate;
+    animation: transformation 2s infinite alternate;
     background-color: #d29b4e;
+    animation: rotate-center 1s;
     /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
 }
 
@@ -473,6 +477,8 @@ footer {
 }
 
 .social-links a:hover {
+    transform: scale(1.2);
+    color: #1d1d1f;
     /* TODO MARDI CSS : Ajouter color: #1d1d1f; */
 }
 
@@ -490,11 +496,14 @@ footer {
 
     /* TODO MARDI CSS : Navigation - passer à flex-direction: column; gap: 20px; */
     .nav-links {
-        /* TODO MARDI CSS : Ajouter flex-direction: column; gap: 20px; */
+        flex-direction: column;
+        gap: 20px;
     }
 
     /* TODO MARDI CSS : Hero - réduire h1 à 2.5rem */
     .hero h1 {
+        font-size: 2.5rem;
+        padding: 40px 0;
         /* TODO MARDI CSS : Ajouter font-size: 2.5rem; padding: 40px 0; */
     }
 
@@ -625,7 +634,7 @@ footer {
     }
 
     to {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 }
 
@@ -639,7 +648,7 @@ footer {
     }
 }
 
-@keyframes lalou {
+@keyframes transformation {
 
     0%,
     100% {
