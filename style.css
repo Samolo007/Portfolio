@@ -9,7 +9,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     color: #1d1d1f;
-    background-color: #ffffff;
+    background-color: #6f6060;
     line-height: 1.6;
 }
 
@@ -64,7 +64,7 @@ p {
 
 /* ===== HEADER / NAVIGATION ===== */
 header {
-    background-color: #ffffff;
+    background-color: #fcf9f9;
     border-bottom: 1px solid #e5e5e7;
     padding: 20px 0;
     position: sticky;
@@ -116,7 +116,7 @@ nav {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background-color: #ffffff;
+    background-color: #f2f4f6;
     color: #1d1d1f;
     padding: 120px 0;
     text-align: center;
@@ -296,6 +296,7 @@ nav {
 }
 
 .project-card:hover {
+    transform: translateY(-30px);
     /* TODO MARDI CSS : Ajouter transform: translateY(-4px); */
 }
 
@@ -628,6 +629,7 @@ footer {
     }
 }
 
+    /* ===== permet un effet d'agrandissement du texte ===== */
 @keyframes salolo {
     from {
         font-size: 1rem;
@@ -638,6 +640,7 @@ footer {
     }
 }
 
+    /* ===== permet un effet de flou ===== */
 @keyframes samolo {
     from {
         filter: blur(0px);
@@ -648,6 +651,7 @@ footer {
     }
 }
 
+ /* ===== permet un effet de translation gauche-droite ===== */
 @keyframes transformation {
 
     0%,
@@ -677,6 +681,7 @@ footer {
     }
 }
 
+ /* ===== permet un effet de flou et d'opacité ===== */
 @keyframes david {
     0% {
         filter: blur(12px);
@@ -689,6 +694,7 @@ footer {
     }
 }
 
+/* ===== permet de faire tourner l'élément ===== */
 @keyframes rotate-center {
   0% {
             transform: rotate(0);
@@ -703,7 +709,7 @@ footer {
     white-space: nowrap;
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
-@keyframes typing {
+@keyframes typing { 
     from {
         width: 0;
     }
