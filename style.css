@@ -26,6 +26,7 @@ h1 {
 }
 h1:hover {
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    transition: cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 h2 {
@@ -167,6 +168,8 @@ nav {
     animation: samolo 3s infinite alternate;
     background-color: #bc8ca4;
     animation: rotate-center 2s;
+    transition: margin-right 2s, color 1s;
+    transition-property: background-color;
     /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
 }
 
@@ -431,6 +434,7 @@ nav {
     animation: transformation 2s infinite alternate;
     background-color: #d29b4e;
     animation: rotate-center 1s;
+    transition: all 2s;
     /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
 }
 
